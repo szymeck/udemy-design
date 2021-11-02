@@ -1,0 +1,217 @@
+
+body {
+    background-image: linear-gradient(#FC5E55 , #FA4083);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+}
+.container {
+    width: 1024px ;
+    min-height: 300px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid ;
+    
+}
+
+main {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card1 {
+    background-image: url(/images/image-background-card1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 30%;
+    min-height: 250px;
+}
+
+.card2 {
+    background-image:url(/images/image-background-card2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 30%;
+    min-height: 250px;
+}
+
+.card3 {
+    background-image: url(/images/image-background-card3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+.card1,.card2,.card3 {
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
+}
+
+.herobox1 {
+
+    flex: 2;
+    padding-right: 30px;
+}
+
+.herobox2 {
+    
+    flex:1;
+}
+
+nav {
+    
+    display: flex;
+
+}
+.nav1 {
+margin: 0.5vw;
+background-color: white;
+    color: #FA4083;
+    font-family:'Playfair Display', serif ;
+    padding: 10px 25px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.301);
+}
+
+.logo {
+    margin: 1vw;
+}
+
+h1 {
+    font-size: 3.3rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.2rem;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.37);
+}
+
+p {
+    line-height: 1.6rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.37);
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+}
+.cards p {
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+    margin: 10px 30px 20px 30px;
+}
+
+.cards i {
+    font-size: 100px;
+    
+}
+
+a:visited {
+    text-decoration: none;
+}
+a {
+    color:white;
+    text-decoration: none;
+}
+
+.mybutton {
+    background-color: white;
+    color: #FA4083;
+    font-family:'Playfair Display', serif ;
+    padding: 10px 25px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.301);
+    margin-top: 20px;
+}
+.mybutton:visited{
+    text-decoration: none;
+}
+.mybutton:hover {
+    background-color: #00000080;
+    color: white;
+    transition-duration: 0.4s;
+    border-style: hidden;
+
+}
+
+.navbutton {
+    border: solid 1px;
+    margin-left: 3px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Playfair Display', serif;
+    padding: 10px 25px;
+    border-radius: 2px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.301);
+}
+
+.testimonials {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+
+.tbox {
+    width: 47%;
+    padding: 50px;
+    border: 1px solid;
+    box-sizing: border-box;
+margin-top: 50px;
+}
+
+/*.tbox :last-child {
+    font-size: 0.8rem;
+}*/
+.tbox p:last-of-type {
+    font-size: 0.8rem;
+    padding-left: 30px;
+}
+
+.dropdown {
+    display: none;
+    position:absolute;
+    z-index: 1;
+    padding-top: 15px;
+
+    
+}
+
+.navbutton:hover .dropdown{
+    display: block;
+}
+
+.dropdown .navbutton {
+    width: 100px;
+    background-color: white;
+    margin-left: -24px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.dropdown .navbutton a {
+color: #FC5E55;
+}
+
+.dropdown .navbutton:hover {
+    background-color: #ffffffcc;
+    transition-duration: 0.4s;
+}

@@ -1,0 +1,188 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+button {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+    height: 10vh;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-cointainer,
+.navlinks, 
+.cart {
+    display: flex;
+}
+.logo-cointainer {
+    
+    flex: 1;
+    
+}
+.logo {
+    margin: 10%;
+    font-weight: 800;
+}
+
+nav {
+    
+    flex: 2;
+    
+}
+
+
+.cart {
+    
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.navlinks {
+justify-content: space-evenly;
+list-style: none;
+}
+.navlink {
+    color: hsl(248, 7%, 42%);
+    text-decoration: none;
+    font-weight: 800;
+}
+.presentation {
+    display: flex;
+width: 90%;
+margin:auto;
+min-height: 80vh;
+align-items: center;
+}
+.introduction {
+    flex: 1;
+    
+}
+
+.intro-text h1 {
+    font-size: 44px; 
+    font-weight: 800;
+    background: linear-gradient(to right, #171727, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.intro-text p {
+    margin: 5px;
+    font-size: 22px;
+    color: #6f6f89;
+}
+.cover {
+    flex: 1;
+    height: 60vh;
+}
+
+.cover img {
+    filter: drop-shadow( 0px 10px 5px black);
+    animation: drop 1.5s ease;
+    height: 100% ;
+}
+.cta-select {
+    border: 3px solid #6f6f89;
+    background: transparent;
+    width: 10vh;
+    height: 5vh;
+    color: #6f6f89;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1vh;
+    cursor: pointer;
+}
+.cta-add {
+    
+    background: #6f6f89;
+    width: 25vh;
+    height: 5vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1vh;
+    cursor: pointer;
+    margin: 10px 0 0 10px;
+}
+.big-circle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.9;
+    height: 70%;
+
+}
+.medium-circle {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.9;
+    height: 60%;
+
+}
+.small-circle {
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.laptop-selection {
+width: 15%;
+display: flex;
+justify-content: space-around;
+position: absolute;
+right: 25%;
+}
+
+@keyframes drop {
+
+0%{
+    opacity: 0;
+    transform: translateY(-80px);
+}
+100%{
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+@media screen and (max-width: 1024px){
+
+.presentation {
+    flex-direction: column ;
+    text-align: center;
+}
+.introduction {
+    margin-top: 5vh;
+    text-align: center;
+}
+.intro-text h1 {
+    font-size: 30px;
+}
+.intro-text p {
+    font-size: 18px;
+}
+.laptop-selection {
+   bottom: 1px;
+    right: 50%;
+    width: 20%;
+    transform: translate(50%,5%);
+
+}
+.cover img {
+    height: 30%;
+}
+.small-circle,.medium-circle,.big-circle {
+opacity: 0.2;
+}
+}
