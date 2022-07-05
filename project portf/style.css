@@ -1,0 +1,32 @@
+.container {
+  background-color: aquamarine;
+  min-height: 500px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+.hide-desktop-only {
+  display: none;
+}
+
+.col img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .col {
+    width: 45%;
+  }
+  .hide-desktop-only {
+    display: block;
+  }
+}
