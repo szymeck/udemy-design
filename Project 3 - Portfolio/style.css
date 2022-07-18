@@ -62,9 +62,11 @@ a:visited {
 }
 .navbar {
     display: flex;
-    
+  
     margin-right: 5%;
 }
+
+
 
 .btn {
     border-style: solid;
@@ -102,6 +104,12 @@ h1 {
 .hide-desktop {
     display: none;
 }
+.mobile-nav{
+    display: none;
+}
+.mobile-bar {
+    display: none;
+}
 
 /* Tablet view */
 @media (max-width: 768px){
@@ -126,17 +134,24 @@ h1 {
     .hide-mobile {
         display: none;
     }
-    header {
-        display: block;
-        text-align: center;
-
-    }
+    
+    
     .navbar {
-        display: block;
+        display: none;
         margin-right: 0%;
         padding: 5px;
         
     }
+   .mobile-nav {
+    display: block;
+    padding: 0px 20px;
+
+   }
+   .mobile-bar{
+    position: absolute;
+    padding-top: 2px;
+   }
+    
     .btn {
         width: 90%;
         display: block;
@@ -144,6 +159,12 @@ h1 {
         padding: 5px;
         margin: auto
         
+    }
+    .btnnav{
+        display: block;
+        background-color: #42c2b3;
+        padding: 15px 30px;
+        margin-left: -75px;
     }
     .header-container { 
         position: relative;
@@ -156,6 +177,9 @@ h1 {
         align-items: center;
         justify-content: center;
         padding-top: 5px;
+        padding-left: 20px;
     }
+    
+    
         
 }
