@@ -1,20 +1,45 @@
 body {
-    font-family: 'Open Sans', sans-seri;
-    font-weight: 300;
-    background-image: linear-gradient(to bottom right,rgb(0, 185, 114),rgb(0, 168, 219));
-
-
-    
+  font-family: "Open Sans", sans-seri;
+  font-weight: 300;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 185, 114),
+    rgb(0, 168, 219)
+  );
 }
 
-h1{
-    font-family: 'Abril Fatface', cursive;
-    font-weight: 700;
-}
-.btn {
-    background-color: coral;
+h1 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: 700;
 }
 
 .card {
-    margin:10px
+  margin: 10px;
 }
+
+.jumbotron {
+  background-color: rgba(250, 235, 215, 0);
+}
+
+.btn-outline-light {
+    border-color: white;
+}
+
+.btn-outline-light:hover{
+    background-color: rgba(255, 255, 255, 0.205);
+}
+.navbar-default{
+    transition:500ms ease;
+    background:transparent;
+  }
+.navbar-default.scrolled{
+    background:rgba(0, 0, 0, 0.548);
+    
+  }
+  .container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
