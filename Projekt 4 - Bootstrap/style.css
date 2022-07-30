@@ -13,9 +13,7 @@ h1 {
   font-weight: 700;
 }
 
-.card {
-  margin: 10px;
-}
+
 
 .jumbotron {
   background-color: rgba(250, 235, 215, 0);
@@ -34,9 +32,9 @@ h1 {
   }
 .navbar-default.scrolled{
     background:rgba(0, 0, 0, 0.548);
-    
+    border-bottom: 1px solid white;
   }
-  .container-fluid {
+  .xd {
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
